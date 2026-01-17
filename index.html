@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск изображений</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Поисковая система</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Что вы хотите найти?" required>
+            <button type="submit" id="search-btn">Найти</button>
+            <button type="button" id="view-favorites">⭐ Избранное</button>
+        </form>
+    </div>
+
+    <div id="loader" class="loader"></div>
+
+    <div id="results-container"></div>
+
+    <div id="pagination-controls" class="pagination">
+        <button id="prev-btn">Назад</button>
+        <span id="page-indicator">Страница 1</span>
+        <button id="next-btn">Вперед</button>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">❌</span>
+        <img id="modal-img" src="" alt="Kartinka">
+        <div id="modal-info"></div>
+    </div>
+</div>
+
+<footer id="footer" class="footer">
+    <p class="right">&#169 2026 Alena Pakhomova <a href="https://github.com/PavlaFelidae">My Github</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
